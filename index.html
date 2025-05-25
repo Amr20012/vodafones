@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>شحن فودافون </title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>شحن فودافون </h1>
+        <p>وفر فلوسك!<p></p>
+    </header>
+    <section class="recharge-form">
+        <h2>اطلب رصيدك الآن</h2>
+        
+            <form id="rechargeForm">
+    <label for="phone"><i class="fas fa-phone"></i> رقم التليفون:</label>
+    <input type="text" id="phone" name="phone" required>
+    <label for="amount"><i class="fas fa-coins"></i> قيمة الرصيد :</label>
+    <input type="number" id="amount" name="amount" step="any" required>
+    <label for="cost"><i class="fas fa-money-bill"></i> التكلفة [جنيه]:</label>
+    <input type="text" id="cost" name="cost" readonly>
+    <label for="paymentMethod"><i class="fas fa-credit-card"></i> طريقة الدفع:</label>
+    <select id="paymentMethod" name="paymentMethod" required>
+        <option value="" disabled selected>اختر طريقة الدفع</option>
+        <option value="VodafoneCash">فودافون كاش</option>
+        <option value="InstaPay">إنستاباي</option>
+    </select>
+    <label for="receipt"><i class="fas fa-upload"></i> رفع سكرين شوت الدفع:</label>
+    <input type="file" id="receipt" name="receipt" accept="image/*" required>
+    <button type="submit">إرسال الطلب</button>
+    <div id="loading" style="display: none;">جاري التحميل...</div>
+    <div id="confirmation" style="display: none;">تم إرسال طلبك!</div>
+</form>
+        </form>
+        <p id="confirmation" style="display:none;">تم إرسال طلبك! سيتم التواصل معك قريبًا.</p>
+        <p>الدفع عبر :</p>
+        <p>Vodafone cash: 01062348032 </p>
+        <p> instapay:  mora.k@instapay<p>
+        <a href="https://wa.me/+201279403331" target="_blank" class="whatsapp-btn">
+            <i class="fab fa-whatsapp"></i> تواصل معانا على واتساب
+        </a>
+    </section>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<div id="particles-js"></div>
+</body>
+</html>

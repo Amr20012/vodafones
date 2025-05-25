@@ -1,0 +1,171 @@
+body {
+    font-family: 'Cairo', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #1e3c72, #2a5298); /* خلفية متدرجة فاخرة */
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background: linear-gradient(90deg, #e60000, #b30000); /* تدرج أحمر فاخر */
+    color: white;
+    padding: 40px 20px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 32px;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+header p {
+    margin: 10px 0;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.recharge-form {
+    max-width: 400px; /* ضبط العرض عشان الـ boxes تبقى جوا */
+    margin: 30px auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.95); /* خلفية شبه شفافة كريستالية */
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.recharge-form:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+label {
+    display: block;
+    margin: 15px 0 5px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #222;
+}
+
+input {
+    width: calc(100% - 24px); /* ضبط العرض عشان الـ boxes ما تخرجش */
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.9);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: #e60000;
+    box-shadow: 0 0 8px rgba(230, 0, 0, 0.4);
+}
+
+input[readonly] {
+    background: #e6e6e6;
+    cursor: not-allowed;
+}
+
+button {
+    background: linear-gradient(90deg, #e60000, #b30000);
+    color: white;
+    padding: 14px 40px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 700;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+select, input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #e60000;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #333;
+    font-size: 16px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    transition: border-color 0.3s ease;
+}
+
+select:focus, input[type="file"]:focus {
+    border-color: #ff4d4d;
+    outline: none;
+}
+
+select option {
+    background: #fff;
+    color: #333;
+}
+
+
+#loading {
+    color: #e60000;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+#particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: linear-gradient(135deg, #a30632, #3b5998);
+}
+
+#confirmation {
+    color: #28a745;
+    font-weight: 700;
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+p {
+    font-size: 16px;
+    color: #222;
+}
+
+.whatsapp-btn {
+    display: inline-flex;
+    align-items: center;
+    background: #25D366;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.whatsapp-btn i {
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.whatsapp-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
